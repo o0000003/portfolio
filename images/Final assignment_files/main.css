@@ -1,10 +1,121 @@
 :root {
-    --bs-body-bg: white;
-    --bs-primary: #A7BABF;
-    --bs-secondary: black;
-    --bs-tertiary-bg: #3D5055;
-
-
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-black: #000;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-primary-rgb: 13, 110, 253;
+    --bs-secondary-rgb: 108, 117, 125;
+    --bs-success-rgb: 25, 135, 84;
+    --bs-info-rgb: 13, 202, 240;
+    --bs-warning-rgb: 255, 193, 7;
+    --bs-danger-rgb: 220, 53, 69;
+    --bs-light-rgb: 248, 249, 250;
+    --bs-dark-rgb: 33, 37, 41;
+    --bs-primary-text-emphasis: #052c65;
+    --bs-secondary-text-emphasis: #2b2f32;
+    --bs-success-text-emphasis: #0a3622;
+    --bs-info-text-emphasis: #055160;
+    --bs-warning-text-emphasis: #664d03;
+    --bs-danger-text-emphasis: #58151c;
+    --bs-light-text-emphasis: #495057;
+    --bs-dark-text-emphasis: #495057;
+    --bs-primary-bg-subtle: #cfe2ff;
+    --bs-secondary-bg-subtle: #e2e3e5;
+    --bs-success-bg-subtle: #d1e7dd;
+    --bs-info-bg-subtle: #cff4fc;
+    --bs-warning-bg-subtle: #fff3cd;
+    --bs-danger-bg-subtle: #f8d7da;
+    --bs-light-bg-subtle: #fcfcfd;
+    --bs-dark-bg-subtle: #ced4da;
+    --bs-primary-border-subtle: #9ec5fe;
+    --bs-secondary-border-subtle: #c4c8cb;
+    --bs-success-border-subtle: #a3cfbb;
+    --bs-info-border-subtle: #9eeaf9;
+    --bs-warning-border-subtle: #ffe69c;
+    --bs-danger-border-subtle: #f1aeb5;
+    --bs-light-border-subtle: #e9ecef;
+    --bs-dark-border-subtle: #adb5bd;
+    --bs-white-rgb: 255, 255, 255;
+    --bs-black-rgb: 0, 0, 0;
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --bs-body-font-family: var(--bs-font-sans-serif);
+    --bs-body-font-size: 1rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
+    --bs-body-color: #212529;
+    --bs-body-color-rgb: 33, 37, 41;
+    --bs-body-bg: #fff;
+    --bs-body-bg-rgb: 255, 255, 255;
+    --bs-emphasis-color: #000;
+    --bs-emphasis-color-rgb: 0, 0, 0;
+    --bs-secondary-color: rgba(33, 37, 41, 0.75);
+    --bs-secondary-color-rgb: 33, 37, 41;
+    --bs-secondary-bg: #e9ecef;
+    --bs-secondary-bg-rgb: 233, 236, 239;
+    --bs-tertiary-color: rgba(33, 37, 41, 0.5);
+    --bs-tertiary-color-rgb: 33, 37, 41;
+    --bs-tertiary-bg: #f8f9fa;
+    --bs-tertiary-bg-rgb: 248, 249, 250;
+    --bs-heading-color: inherit;
+    --bs-link-color: #0d6efd;
+    --bs-link-color-rgb: 13, 110, 253;
+    --bs-link-decoration: underline;
+    --bs-link-hover-color: #0a58ca;
+    --bs-link-hover-color-rgb: 10, 88, 202;
+    --bs-code-color: #d63384;
+    --bs-highlight-color: #212529;
+    --bs-highlight-bg: #fff3cd;
+    --bs-border-width: 1px;
+    --bs-border-style: solid;
+    --bs-border-color: #dee2e6;
+    --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+    --bs-border-radius: 0.375rem;
+    --bs-border-radius-sm: 0.25rem;
+    --bs-border-radius-lg: 0.5rem;
+    --bs-border-radius-xl: 1rem;
+    --bs-border-radius-xxl: 2rem;
+    --bs-border-radius-2xl: var(--bs-border-radius-xxl);
+    --bs-border-radius-pill: 50rem;
+    --bs-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    --bs-box-shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    --bs-box-shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    --bs-box-shadow-inset: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+    --bs-focus-ring-width: 0.25rem;
+    --bs-focus-ring-opacity: 0.25;
+    --bs-focus-ring-color: rgba(13, 110, 253, 0.25);
+    --bs-form-valid-color: #198754;
+    --bs-form-valid-border-color: #198754;
+    --bs-form-invalid-color: #dc3545;
+    --bs-form-invalid-border-color: #dc3545;
 }
 
 
@@ -69,7 +180,7 @@
 
 /* skip link placed at the top of the site for accessibility hidden by deafult */
 .skip-link {
-    background-color: var(--bs-tertiary-bg);
+    background-color: #494F4E;
 }
 
 .skip {
@@ -82,7 +193,7 @@
 }
 
 .skip-link a {
-    color: var(--bs-body-bg);
+    color: white;
     text-decoration: none;
 }
 
@@ -98,7 +209,7 @@
 
 /* Custom styles for the full-screen dropdown menu */
 body {
-    background-color: var(--bs-body-bg);
+
     overflow-x: hidden;
 }
 
@@ -115,34 +226,23 @@ li {
 .navbar-nav li {
     font-size: 50px;
     text-transform: uppercase;
-    color: var(--bs-secondary);
-    border-bottom: 2px solid var(--bs-secondary);
+    color: black;
+    border-bottom: 2px solid black;
     margin: 1rem;
 }
 
 .navbar-nav li:nth-child(1) {
-    border-top: 2px solid var(--bs-secondary);
+    border-top: 2px solid black;
 }
 
 
 .nav-link {
-    color: var(--bs-secondary);
+    color: black;
     display: block;
     text-align: left;
     padding-top: 0;
     padding-bottom: 0;
 }
-
-.nav-link:hover {
-    color: var(--bs-body-bg);
-    transition: ease-in 0.5s;
-}
-
-.nav-link:focus {
-    color: var(--bs-body-bg);
-}
-
-
 
 .navbar {
     position: absolute;
@@ -158,7 +258,7 @@ li {
     padding-top: 5rem;
     width: 100%;
     text-align: left;
-    background-color: var(--bs-tertiary-bg);
+    background-color: #3D5055;
     height: 100vh;
     overflow: hidden;
 
@@ -185,7 +285,7 @@ li {
 .navbar-toggler[aria-expanded=false] .button::after {
     content: "clear_all";
     font-family: "Material Icons";
-    color: var(--bs-secondary);
+    color: black;
     font-size: 50px;
 }
 
@@ -193,7 +293,7 @@ li {
     content: "close";
     font-family: "Material Icons";
     font-size: 50px;
-    color: var(--bs-secondary);
+    color: black;
 
 }
 
@@ -215,7 +315,7 @@ h1 {
     font-family: "Modak", sans-serif;
     font-size: 150px;
     text-align: center;
-    color: var(--bs-secondary);
+    color: black;
     text-transform: uppercase;
 
 
@@ -242,7 +342,7 @@ h1 {
     font-family: "Modak", sans-serif;
     font-size: 150px;
     text-align: center;
-    color: var(--bs-secondary);
+    color: black;
     text-transform: uppercase;
     animation: fade-in-down 2s ease forwards;
 }
@@ -260,7 +360,7 @@ h1 {
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
 }
 
-
+/* apply exclusion effect to all img  */
 
 
 
@@ -269,13 +369,13 @@ h1 {
 .explore p {
     margin-top: 5rem;
     font-size: 20px;
-
+   
     font-family: 'Inter', sans-serif;
 }
 
 .explore a {
     text-decoration: none;
-    color: var(--bs-secondary);
+    color: black;
     text-align: right;
     display: block;
     max-width: 500px;
@@ -283,7 +383,7 @@ h1 {
 }
 
 .explore a:hover {
-    color: var(--bs-primary);
+    color: #A7BABF;
 }
 
 
@@ -294,7 +394,7 @@ h1 {
     height: 2px;
     width: 35px;
     margin-right: 10px;
-    background-color: var(--bs-secondary);
+    background-color: black;
 }
 
 .closeup-house {
@@ -320,7 +420,7 @@ h1 {
     text-transform: uppercase;
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: bold;
-    color: var(--bs-tertiary-bg);
+    color: #3D5055;
 
 }
 
@@ -364,7 +464,7 @@ main.about {
 .education {
     margin-top: 5rem;
     padding-top: 2rem;
-    border-top: 2px solid var(--bs-secondary);
+    border-top: 2px solid black;
 
 }
 
@@ -391,7 +491,7 @@ main.about {
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: bold;
     font-size: 60px;
-    color: var(--bs-tertiary-bg);
+    color: #3D5055;
 }
 
 .square {
@@ -406,7 +506,7 @@ main.about {
     text-transform: uppercase;
     transform: translate(-50%, -50%);
     font-weight: 600;
-    color: var(--bs-secondary);
+    color: black;
 
 
 }
@@ -433,9 +533,8 @@ main.about {
 .contact-text h2 {
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: bold;
-    text-align: center;
     font-size: 60px;
-    color: var(--bs-tertiary-bg);
+    color: #3D5055;
 }
 
 form {
@@ -448,8 +547,8 @@ input[type=text],
 input[type=email] {
     background: transparent;
     border: none;
-    border-bottom: 1px solid var(--bs-secondary);
-    width: 100%;
+    border-bottom: 1px solid #000000;
+    width: 1100px;
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
@@ -464,7 +563,7 @@ input[type=email] {
 
 .submit button {
 
-    color: var(--bs-primary);
+    color: #A7BABF;
     font-size: 14px;
     border: 0.3em solid #A7BABF;
     border-radius: 0.5em;
@@ -488,7 +587,7 @@ input[type=email] {
     position: absolute;
     width: 25%;
     height: 100%;
-    background-color: var(--bs-primary);
+    background-color: #A7BABF;
     transform: translateY(150%);
     border-radius: 50%;
     left: calc((var(--n) - 1) * 25%);
@@ -498,7 +597,7 @@ input[type=email] {
 }
 
 .submit button:hover {
-    color: var(--bs-body-bg);
+    color: white;
 }
 
 .submit button:hover span {
@@ -528,7 +627,7 @@ input[type=email] {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    background-color: var(--bs-primary);
+    background-color: #A7BABF;
     padding: 3rem;
     padding-bottom: 6rem;
 }
@@ -536,9 +635,9 @@ input[type=email] {
 .bg-blue a {
 
     text-decoration: none;
-    color: var(--bs-secondary);
+    color: black;
     margin-left: 1rem;
-    border-left: 2px solid var(--bs-secondary);
+    border-left: 2px solid black;
     padding-left: 1rem;
 }
 
@@ -563,23 +662,23 @@ i {
     border: 2px solid;
     border-radius: 50%;
     padding: 0.3rem 0.5rem;
-    background-color: var(--bs-secondary);
+    background-color: black;
 
 }
 
 #myBtn span {
     font-size: 2rem;
-    color: var(--bs-body-bg);
+    color: white;
 
 }
 
 #myBtn:hover span {
     font-size: 2rem;
-    color: var(--bs-tertiary-bg);
+    color: #3D5055;
 }
 
 #myBtn:hover {
-    background-color: var(--bs-body-bg);
+    background-color: white;
 }
 
 
@@ -693,17 +792,17 @@ i {
 
 
     .contact-text h2 {
-        text-align: center;
-        font-size: 50px;
 
+        font-size: 50px;
+        color: #3D5055;
     }
 
     input[type=text],
     input[type=email] {
         background: transparent;
         border: none;
-        border-bottom: 1px solid var(--bs-secondary);
-
+        border-bottom: 1px solid #000000;
+        width: 680px;
         margin-top: 1rem;
         margin-bottom: 2rem;
     }
@@ -713,7 +812,7 @@ i {
 }
 
 /* media queries mobile */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px)  {
 
 
 
@@ -765,7 +864,7 @@ i {
 
     .closeup-house {
         margin-top: 1rem;
-
+      
     }
 
     .explore p {
@@ -787,7 +886,7 @@ i {
         font-size: 30px;
         font-family: 'Montserrat Alternates', sans-serif;
         font-weight: 1000;
-        color: var(--bs-tertiary-bg);
+        color: #3D5055;
         text-align: center;
         margin-bottom: 5rem;
     }
@@ -856,8 +955,8 @@ i {
     /* contact page styling mobile */
 
     .shoes-img {
-        /* width: 300px; */
-        margin-left: 0;
+        width: 300px;
+        margin-left: 2rem;
 
     }
 
@@ -870,10 +969,10 @@ i {
     }
 
     .contact-text h2 {
-
+        padding-left: 5.5rem;
         font-size: 40px;
         font-weight: bolder;
-        text-align: center;
+
     }
 
     form {
@@ -884,7 +983,7 @@ i {
     input[type=text],
     input[type=email] {
 
-
+        width: 320px;
         margin-top: 1rem;
         margin-bottom: 2rem;
     }

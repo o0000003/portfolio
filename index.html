@@ -17,9 +17,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-       
-        <link rel="stylesheet" href="css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
 
 </head>
 
@@ -33,7 +33,7 @@
 
         <!-- skip link  -->
         <div class="skip-link">
-            <a href="#projects" class="skip">Skip to the projects</a>
+            <a href="#projects" aria-label="Skip to the projects section" class="skip">Skip to the projects</a>
 
         </div>
 
@@ -48,13 +48,15 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">home</a>
+                        <a class="nav-link" href="index.html" aria-label="This link to the home page">home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">about me</a>
+                        <a class="nav-link" href="about.html" aria-label="This link to the artist information">about
+                            me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">contact</a>
+                        <a class="nav-link" href="contact.html"
+                            aria-label="Click here for contact information">contact</a>
                     </li>
                 </ul>
             </div>
@@ -70,24 +72,22 @@
             </div>
 
         </section>
-        <div class="container " >
-            <div class="row" >
-                <div class="col offset-1 " data-aos="fade-up" >
+        <div class="container ">
+            <div class="row">
+                <div class="col-12 col-md-5 col-lg-5 " data-aos="fade-up">
 
                     <picture>
-                        <source 
-                        srcset="images/body-img-750_x_747.png " media="(max-width:759px)">
-              
-                        <source
-                            srcset="images/body-img.png " media="(min-width: 760px)">
+                        <source srcset="images/body-img-750_x_747.png " media="(max-width:759px)">
 
-                            <img class="closeup-house" src="images/body-img.png" alt="house-close-up-images">
-                      </picture>
+                        <source srcset="images/body-img.png " media="(min-width: 760px)">
 
-                   
+                        <img class="closeup-house" src="images/body-img.png" alt="house-close-up-images">
+                    </picture>
+
+
                 </div> <!-- col closing tag -->
                 <div class="col pt-lg-5 mt-lg-5 ms-4
-                pt-sm-1 explore " data-aos="fade-up" data-aos-delay="200" >
+                pt-sm-1 explore " data-aos="fade-up" data-aos-delay="200">
                     <p>Explore my portfolio, where a seamless integration of creativity, strategic acumen, and an
                         unwavering commitment to impactful design awaits. Within these projects lies a fusion of passion
                         and innovation, showcasing a dedication to pushing the boundaries of design conventions. Each
@@ -96,7 +96,8 @@
                         professional ethos rooted in excellence.
 
                     </p>
-                    <a href="about.html"> <span class="line"></span> Learn More </a>
+                    <a href="about.html" aria-label="This link to the about page "> <span class="line"></span> Learn
+                        More </a>
                 </div> <!-- col closing tag -->
 
 
@@ -105,35 +106,31 @@
 
         <div id="projects" class="container desktop-display">
             <div class="row ms-5 mt-5">
-                <div class="col-4 mt-5 " data-aos="fade-up" >
+                <div class="col-4 mt-5 " data-aos="fade-up">
 
                     <picture>
-                        <source 
-                        srcset="images/statue-563_x_907.png " media="(max-width:759px)">
-              
-                        <source
-                            srcset="images/statue.png" media="(min-width: 760px)">
-                            
-                            <img class="statue-img" src="images/statue.png" alt="two-statue">
-                      </picture>
+                        <source srcset="images/statue-563_x_907.png " media="(max-width:759px)">
 
-                
+                        <source srcset="images/statue.png" media="(min-width: 760px)">
+
+                        <img class="statue-img" src="images/statue.png" alt="two-statue">
+                    </picture>
+
+
                 </div> <!-- col-6 closing tag  -->
 
-                <div class="col-4 offset-5 offset-md-3 " data-aos="fade-up"  >
+                <div class="col-4 offset-5 offset-md-3 " data-aos="fade-up">
 
                     <picture>
-                        <source 
-                        srcset="images/pillar-563_x_907.png " media="(max-width:759px)">
-              
-                        <source
-                            srcset="images/pillar.png " media="(min-width: 760px)">
-                            
-                            <img class="pillar-img" src="images/pillar.png" alt="column">
-                      </picture>
+                        <source srcset="images/pillar-563_x_907.png " media="(max-width:759px)">
+
+                        <source srcset="images/pillar.png " media="(min-width: 760px)">
+
+                        <img class="pillar-img" src="images/pillar.png" alt="column">
+                    </picture>
 
 
-                  
+
                 </div> <!-- col-6 closing tag  -->
             </div> <!-- row closing tag  -->
             <div class="row justify-content-center">
@@ -141,67 +138,59 @@
                     <h2>feature .projects</h2>
                 </div>
 
-                <div class="col-sm-6  m-5 " data-aos="fade-up" >
+                <div class="col-sm-6  m-5 " data-aos="fade-up">
 
                     <picture>
-                        <source 
-                        srcset="images/tower-563_x_907.png " media="(max-width:759px)">
-              
-                        <source
-                            srcset="images/tower.png" media="(min-width: 760px)">
-                            
-                            <img class="tower-img" src="images/tower.png" alt="wood-tower">
-                      </picture>
+                        <source srcset="images/tower-563_x_907.png " media="(max-width:759px)">
+
+                        <source srcset="images/tower.png" media="(min-width: 760px)">
+
+                        <img class="tower-img" src="images/tower.png" alt="wood-tower">
+                    </picture>
 
 
-                   
+
                 </div> <!-- col-sm-6 closing tag -->
 
 
             </div> <!-- row closing tag  -->
         </div> <!-- container closing tag  -->
 
- <!-- display block in css to show the carousel -->
+        <!-- display block in css to show the carousel -->
         <div id="carouselcontrols" class="carousel slide mobile-display" data-ride="carousel">
             <h2>feature .projects</h2>
             <div class="carousel-inner ">
                 <div class="carousel-item active">
                     <picture>
-                        <source 
-                        srcset="images/statue-563_x_907.png " media="(max-width:759px)">
-              
-                        <source
-                            srcset="images/statue.png" media="(min-width: 760px)">
-                            
-                            <img class="d-block w-100 no-filter" src="images/statue.png" alt="First slide">
-                      </picture>
-                 
+                        <source srcset="images/statue-563_x_907.png " media="(max-width:759px)">
+
+                        <source srcset="images/statue.png" media="(min-width: 760px)">
+
+                        <img class="d-block w-100 no-filter" src="images/statue.png" alt="First slide">
+                    </picture>
+
                 </div>
                 <div class="carousel-item">
 
                     <picture>
-                        <source 
-                        srcset="images/pillar-563_x_907.png " media="(max-width:759px)">
-              
-                        <source
-                            srcset="images/pillar.png " media="(min-width: 760px)">
-                            
-                            <img class="d-block w-100 no-filter" src="images/pillar.png" alt="Second slide">
-                      </picture>
-                  
+                        <source srcset="images/pillar-563_x_907.png " media="(max-width:759px)">
+
+                        <source srcset="images/pillar.png " media="(min-width: 760px)">
+
+                        <img class="d-block w-100 no-filter" src="images/pillar.png" alt="Second slide">
+                    </picture>
+
                 </div>
                 <div class="carousel-item">
                     <picture>
-                        <source 
-                        srcset="images/tower-563_x_907.png " media="(max-width:759px)">
-              
-                        <source
-                            srcset="images/tower.png" media="(min-width: 760px)">
-                            
-                            <img class="d-block w-100 no-filter" src="images/tower.png" alt="Third slide">
-                      </picture>
+                        <source srcset="images/tower-563_x_907.png " media="(max-width:759px)">
 
-                  
+                        <source srcset="images/tower.png" media="(min-width: 760px)">
+
+                        <img class="d-block w-100 no-filter" src="images/tower.png" alt="Third slide">
+                    </picture>
+
+
                 </div>
             </div>
             <a class="carousel-control-prev " href="#carouselcontrols" role="button" data-slide="prev">
@@ -223,13 +212,13 @@
 
 
 
-            <footer class="bg-blue">
-                <a href="mailto:khai67427@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i>Mail</a>
-                <a href="https://instagram.com/0k.liyy_" target="_blank"><i class="fa-brands fa-instagram"></i>Instagram</a>
-                <a href="tel: +1(613)-883-0882" target="_blank"><i class="fa-solid fa-phone-flip"></i>Phone</a>
-                <a href="https://www.facebook.com/profile.php?id=100042860927681&mibextid=LQQJ4d" target="_blank"><i
-                        class="fa-brands fa-facebook-f"></i>Facebook</a>
-            </footer>
+    <footer class="bg-blue">
+        <a href="mailto:khai67427@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i>Mail</a>
+        <a href="https://instagram.com/0k.liyy_" target="_blank"><i class="fa-brands fa-instagram"></i>Instagram</a>
+        <a href="tel: +1(613)-883-0882" target="_blank"><i class="fa-solid fa-phone-flip"></i>Phone</a>
+        <a href="https://www.facebook.com/profile.php?id=100042860927681&mibextid=LQQJ4d" target="_blank"><i
+                class="fa-brands fa-facebook-f"></i>Facebook</a>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
@@ -247,7 +236,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-      </script>
+    </script>
 
     <script src="javascript/button.js"></script>
 </body>
