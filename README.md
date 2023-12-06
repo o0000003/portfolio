@@ -1,4 +1,4 @@
-# Abhay Sharma - Web Dev II - Portfolio
+# Khai Ly O - Web Dev II - Portfolio
 
 ## Project Explanation
 I started with the design I did in UX Design I class using Figma. For this project I used Bootstrap.
@@ -17,10 +17,11 @@ I started with the design I did in UX Design I class using Figma. For this proje
 - [AnimateOnScroll](https://michalsnik.github.io/aos/)
 
 ## External Resources
-- [Images from Unsplash](https://unsplash.com/)
-- [Roboto Google Font](https://fonts.google.com/specimen/Roboto)
+- [Modak Google Font](https://fonts.google.com/specimen/Modak?query=modak)
+- [Montserrat Alternates Google Font] (https://fonts.google.com/specimen/Montserrat+Alternates?query=mont) 
+- [Inter Google Font] (https://fonts.google.com/specimen/Inter?query=inter)
 
 ## Logo
-![placeholder](images/rm-demo-img.jpg)
+![placeholder](images/logo.svg)
 
 

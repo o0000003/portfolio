@@ -1,0 +1,899 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    :focus {
+        box-shadow: none !important;
+        border: none;
+    }
+}
+
+.page-cover,
+.curtain,
+.page-cover::before,
+.page-cover::after {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 99999999999;
+}
+
+.curtain {
+  height: 100vh;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(125, 156, 150, 1) 100%, rgba(0, 212, 255, 1) 100%);
+  animation: dropCurtain 0.75s 0.30s ease-in-out forwards;
+  transform-origin: bottom;
+
+}
+
+/* curtains is raised at three different intervals using delay to provde intended effect */
+.page-cover::before {
+  content: "";
+  height: 100vh;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 255, 255, 1) 100%, rgba(0, 212, 255, 1) 100%);
+  animation: dropCurtain 0.75s 0.40s ease-in-out forwards;
+  transform-origin: bottom;
+}
+
+.page-cover::after {
+  content: "";
+  height: 100vh;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(167, 186, 191, 1) 100%, rgba(0, 212, 255, 1) 100%);
+  animation: dropCurtain 0.75s 0.10s ease-in-out forwards;
+  transform-origin: bottom;
+}
+
+
+/* animation for raising the curtain by changing scale in the Y direction */
+@keyframes dropCurtain {
+  from {
+    transform: scaleY(1);
+  }
+
+  to {
+    transform: scaleY(0);
+  }
+}
+
+/* skip link placed at the top of the site for accessibility hidden by deafult */
+.skip-link {
+    background-color: #494F4E;
+}
+
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip-link a {
+    color: white;
+    text-decoration: none;
+}
+
+.skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+}
+
+
+
+
+
+/* Custom styles for the full-screen dropdown menu */
+body {
+
+    overflow-x: hidden;
+}
+
+
+
+li {
+    padding: 3rem 2rem;
+}
+
+.about-img {
+    max-width: 100%;
+}
+
+.navbar-nav li {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: black;
+    border-bottom: 2px solid black;
+    margin: 1rem;
+}
+
+.navbar-nav li:nth-child(1) {
+    border-top: 2px solid black;
+}
+
+
+.nav-link {
+    color: black;
+    display: block;
+    text-align: left;
+
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 999999999;
+    padding: 2rem;
+
+}
+
+.navbar-nav {
+    padding-top: 5rem;
+    width: 100%;
+    text-align: left;
+    background-color: #3D5055;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+.navbar-collapse {
+
+    position: fixed;
+    top: 0;
+    /* Adjust this value based on your navbar height */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+
+}
+
+.navbar-toggler {
+    z-index: 10000;
+    border: none;
+}
+
+
+.navbar-toggler[aria-expanded=false] .button::after {
+    content: "clear_all";
+    font-family: "Material Icons";
+    color: black;
+    font-size: 50px;
+}
+
+.button::after {
+    content: "close";
+    font-family: "Material Icons";
+    font-size: 50px;
+    color: black;
+
+}
+
+
+
+.home-header {
+    position: relative;
+    background-color: white;
+    background-image: url(../images/header-image.png);
+    padding-top: 40rem;
+    background-position: center;
+    background-blend-mode: exclusion;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+
+    font-family: "Modak", sans-serif;
+    font-size: 150px;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    
+   
+}
+
+/* fade in animation for the header */
+@keyframes fade-in-down{
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(calc(-50% + 100px));
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(-50%);
+      }
+}
+
+.home-header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-family: "Modak", sans-serif;
+    font-size: 150px;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    animation: fade-in-down 2s ease forwards;
+}
+
+/* header img  */
+.home-header img {
+    width: 50px;
+    z-index: 1;
+}
+
+
+.logo-img {
+    mix-blend-mode: initial;
+    width: 100px;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+/* apply exclusion effect to all img  */
+
+
+
+
+
+.explore p {
+    margin-top: 5rem;
+    font-size: 20px;
+    max-width: 500px;
+    font-family: 'Inter', sans-serif;
+}
+
+.explore a {
+    text-decoration: none;
+    color: black;
+    text-align: right;
+    display: block;
+    max-width: 500px;
+    font-size: 18px;
+}
+
+.explore a:hover {
+    color: #A7BABF;
+}
+
+
+
+.line {
+    display: inline-block;
+    vertical-align: middle;
+    height: 2px;
+    width: 35px;
+    margin-right: 10px;
+    background-color: black;
+}
+
+.closeup-house {
+    margin-top: 5rem;
+    width: 100%;
+}
+
+.tower-img,
+.pillar-img,
+.statue-img {
+    margin-top: 5rem;
+    width: 300px;
+}
+
+
+
+.statue-img {
+    margin-top: 5rem;
+}
+
+.sub-heading h2 {
+    font-size: 100px;
+    text-transform: uppercase;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+    color: #3D5055;
+
+}
+
+.mobile-display {
+    display: none;
+}
+
+/* about page styling  */
+
+.about h1{
+    animation: about-fade 2s ease-in forwards;
+}
+
+@keyframes about-fade{
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+      }
+    100% {
+        opacity: 1;
+      }
+}
+
+main.about {
+    margin-top: 250px;
+}
+
+.about p {
+
+    max-width: 500px;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.about-img {
+    width: 550px;
+}
+
+
+.education {
+    margin-top: 5rem;
+    padding-top: 2rem;
+    border-top: 2px solid black;
+
+}
+
+.education p {
+    text-transform: capitalize;
+}
+
+.edu-info {
+    margin: 0 auto;
+    margin-top: 10rem;
+    max-width: 1200px;
+}
+
+.first-text {
+    font-weight: 700;
+}
+
+.skills {
+    margin-bottom: 5rem;
+    padding-top: 5rem;
+}
+
+.skills h2 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    color: #3D5055;
+}
+
+.square {
+    width: 100%;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 40px;
+    text-transform: uppercase;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+    color: black;
+
+
+}
+
+/* contact page styling */
+
+.shoes-img {
+
+    width: 100%;
+    margin-left: 5rem;
+}
+
+.overlay h2 {
+    margin-top: 5rem;
+    font-size: 100px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+}
+
+.contact-box {
+    padding-top: 5rem;
+}
+
+.contact-text h2 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    color: #3D5055;
+}
+
+form {
+    margin: 1rem;
+    padding-bottom: 5rem;
+    padding-top: 4rem;
+}
+
+input[type=text],
+input[type=email] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+    width: 1100px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+
+
+.submit {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.submit button {
+  
+    color: #A7BABF;
+    font-size: 14px;
+    border: 0.3em solid #A7BABF ;
+    border-radius: 0.5em;
+    width: 8em;
+    height: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Montserrat Alternates', sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 2em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+
+}
+
+/* hover styling for the submit button  */
+.submit button span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: #A7BABF;
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+.submit button:hover {
+    color: white;
+}
+
+.submit button:hover span {
+    transform: translateY(0) scale(2);
+}
+
+.submit button span:nth-child(1) {
+    --n: 1;
+}
+
+.submit button span:nth-child(2) {
+    --n: 2;
+}
+
+.submit button span:nth-child(3) {
+    --n: 3;
+}
+
+.submit button span:nth-child(4) {
+    --n: 4;
+}
+
+
+
+
+.bg-blue {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: #A7BABF;
+    padding: 3rem;
+    padding-bottom: 6rem;
+}
+
+.bg-blue a {
+
+    text-decoration: none;
+    color: black;
+    margin-left: 1rem;
+    border-left: 2px solid black;
+    padding-left: 1rem;
+}
+
+.bg-blue a:nth-of-type(1) {
+    border: none;
+}
+
+i {
+    padding-right: 1rem;
+}
+
+.skills-img {
+    max-width: 100%;
+}
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 2rem;
+    right: 5rem;
+    border: 2px solid;
+    border-radius: 50%;
+    padding: 0.3rem 0.5rem;
+    background-color: black;
+
+}
+
+#myBtn span {
+    font-size: 2rem;
+    color: white;
+
+}
+
+#myBtn:hover span {
+    font-size: 2rem;
+    color: #3D5055;
+}
+
+#myBtn:hover{
+    background-color: white;
+}
+
+
+
+/* media queries tablet */
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+
+
+    .navbar-nav {
+        padding-top: 10rem;
+
+    }
+
+
+    main.about {
+        margin-top: 250px;
+    }
+
+    .home-header h1 {
+        font-size: 80px;
+        text-align: center;
+
+    }
+
+
+    .sub-heading h2 {
+        font-size: 60px;
+        text-transform: uppercase;
+
+    }
+
+    .explore a {
+
+        max-width: 600px;
+        font-size: 15px;
+    }
+
+
+    .closeup-house {
+        margin-top: 5rem;
+        width: 100%;
+    }
+
+    .explore p {
+
+        font-size: 13px;
+        max-width: 700px;
+        font-family: 'Inter', sans-serif;
+    }
+
+    .tower-img,
+    .statue-img,
+    .pillar-img {
+
+        width: 200px;
+    }
+
+
+    /* about page styling for tablet */
+
+    .about h1 {
+        font-size: 80px;
+    }
+
+    .about-img {
+        margin-top: 2rem;
+        width: 350px;
+    }
+
+    .about p {
+        margin-top: 2rem;
+        max-width: 800px;
+        font-size: 15px;
+    }
+
+    .skills h2 {
+        font-size: 40px;
+        font-weight: 400;
+    }
+
+    .square {
+        max-width: 100%;
+    }
+
+    .education p {
+        font-size: 15px;
+    }
+
+    .centered {
+        font-size: 25px;
+        max-width: fit-content;
+
+    }
+
+
+    /* contact page styling for tablet */
+
+    .shoes-img {
+        width: 100%;
+
+    }
+
+    .overlay h2 {
+        font-size: 60px;
+    }
+
+
+
+    .contact-text h2 {
+
+        font-size: 50px;
+        color: #3D5055;
+    }
+
+    input[type=text],
+    input[type=email] {
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #000000;
+        width: 680px;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+
+
+}
+
+/* media queries mobile */
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+
+
+
+    .navbar-nav {
+        padding-top: 6rem;
+
+    }
+
+    /* home page styling for mobile */
+    .navbar-nav a {
+        font-size: 35px;
+        text-align: center;
+
+
+    }
+
+
+    .desktop-display {
+        display: none;
+    }
+
+    .mobile-display {
+        display: block;
+
+        margin: 2rem;
+    }
+
+
+    .no-filter {
+        mix-blend-mode: normal;
+    }
+
+    .home-header {
+
+        padding-top: 30rem;
+
+    }
+
+    .logo-img {
+        width: 70px;
+    }
+
+
+    .home-header h1 {
+        font-size: 50px;
+        text-align: center;
+
+    }
+
+    .closeup-house {
+        margin-top: 1rem;
+        width: 320px;
+    }
+
+    .explore p {
+        margin-top: 2rem;
+        font-size: 14px;
+        max-width: 400px;
+
+
+    }
+
+    .explore a {
+        padding-right: 4rem;
+        font-size: 14px;
+    }
+
+    .mobile-display h2 {
+        margin-top: 5rem;
+        text-transform: uppercase;
+        font-size: 30px;
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-weight: 1000;
+        color: #3D5055;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+
+
+    /* about page styling for mobile */
+
+
+    .about h1 {
+        font-size: 60px;
+    }
+
+    .about-img {
+        width: 300px;
+
+    }
+
+    .about p {
+        margin-top: 2rem;
+        font-size: 12px;
+    }
+
+    /* .about .container {
+        padding-left: 0;
+    } */
+
+
+
+    .edu-info {
+        margin-top: -5rem;
+        padding: 2rem;
+    }
+
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        transform: translateY(50px);
+
+    }
+
+    .skills h2 {
+        font-size: 37px;
+        padding-left: 2rem;
+        font-weight: bolder;
+    }
+
+    .square {
+        max-width: 100%;
+        padding-bottom: 2rem;
+        padding-left: 2rem;
+        padding-right: 1.5rem;
+
+    }
+
+
+    .education p {
+        font-size: 15px;
+    }
+
+    .centered {
+        font-size: 30px;
+        padding-left: 1rem;
+
+    }
+
+    /* contact page styling mobile */
+
+    .shoes-img {
+        width: 300px;
+        margin-left: 2rem;
+
+    }
+
+    .overlay h2 {
+        margin-top: 0;
+        font-size: 50px;
+        margin-left: 2rem;
+
+
+    }
+
+    .contact-text h2 {
+        padding-left: 5.5rem;
+        font-size: 40px;
+        font-weight: bolder;
+
+    }
+
+    form {
+        padding-left: 1rem;
+    }
+
+
+    input[type=text],
+    input[type=email] {
+
+        width: 320px;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+   label{
+    font-size: 15px;
+   }
+
+
+
+
+
+
+
+
+
+
+    .bg-blue {
+        flex-direction: column;
+        text-align: right;
+        gap: 1rem;
+
+
+
+    }
+
+
+    .bg-blue a {
+        border: none;
+    }
+
+
+
+#myBtn{
+    bottom: 1rem;
+    right: 2rem;
+
+}
+
+
+}
