@@ -303,6 +303,7 @@ h1 {
     background-color: var(--bs-secondary);
 }
 
+
 .closeup-house {
     margin-top: 5rem;
     width: 100%;
@@ -355,7 +356,7 @@ h1 {
 }
 
 
-/* styling for abou paragraph */
+/* styling for about paragraph */
 main.about {
     margin-top: 250px;
 }
@@ -604,7 +605,8 @@ i {
 /* media queries tablet */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
-
+  
+     /* This is the adjusment for the nav bar in tablet */
     .navbar-nav {
         padding-top: 10rem;
 
@@ -619,6 +621,7 @@ i {
         margin-top: 250px;
     }
 
+    /* resizing the h1 and h2 for tablet */
     .home-header h1 {
         font-size: 80px;
         text-align: center;
@@ -631,6 +634,8 @@ i {
         text-transform: uppercase;
 
     }
+    /* ************************************* */
+
 
     .explore a {
 
@@ -733,7 +738,7 @@ i {
 @media only screen and (max-width: 767px) {
 
 
-
+  /* This is the adjusment for the nav bar in mobile */
     .navbar-nav {
         padding-top: 6rem;
 
@@ -747,11 +752,12 @@ i {
 
     }
 
-
+ /* display none for the grid in desktop  */
     .desktop-display {
         display: none;
     }
 
+    /* display block for the carousel to display on mobile only  */
     .mobile-display {
         display: block;
 
@@ -797,6 +803,8 @@ i {
         padding-right: 4rem;
         font-size: 14px;
     }
+
+    /* carousel h2 styling  */
 
     .mobile-display h2 {
         margin-top: 5rem;
@@ -871,7 +879,7 @@ i {
     /* contact page styling mobile */
 
     .shoes-img {
-        /* width: 300px; */
+     
         margin-left: 0;
 
     }
@@ -911,12 +919,7 @@ i {
 
 
 
-
-
-
-
-
-
+ /* target to style the footer for mobile  */
     .bg-blue {
         flex-direction: column;
         text-align: right;
@@ -932,7 +935,7 @@ i {
     }
 
 
-
+/* spacing the back to top button to align more on the left */
     #myBtn {
         bottom: 1rem;
         right: 2rem;
