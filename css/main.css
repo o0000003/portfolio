@@ -19,6 +19,8 @@
     }
 }
 
+
+/* This part is for the curtain intro for the whole page */
 .page-cover,
 .curtain,
 .page-cover::before,
@@ -198,7 +200,7 @@ li {
 }
 
 
-
+/* This part target the home-header to add background image for the header section  */
 .home-header {
     position: relative;
     background-color: white;
@@ -210,6 +212,7 @@ li {
     background-repeat: no-repeat;
 }
 
+/* stylinh for all h1 on the site */
 h1 {
 
     font-family: "Modak", sans-serif;
@@ -221,7 +224,7 @@ h1 {
 
 }
 
-/* fade in animation for the header */
+/* fade in animation for the main header */
 @keyframes fade-in-down {
     0% {
         opacity: 0;
@@ -233,6 +236,8 @@ h1 {
         transform: translateX(-50%) translateY(-50%);
     }
 }
+
+/* This styling only apply on the home page header */
 
 .home-header h1 {
     position: absolute;
@@ -253,7 +258,7 @@ h1 {
     z-index: 1;
 }
 
-
+/* this style the logo svg */
 .logo-img {
     mix-blend-mode: initial;
     width: 100px;
@@ -265,7 +270,7 @@ h1 {
 
 
 
-
+/* this is for the text on main page that link to the about page */
 .explore p {
     margin-top: 5rem;
     font-size: 20px;
@@ -282,12 +287,13 @@ h1 {
     font-size: 18px;
 }
 
+/* This hover for the learn more link  */
 .explore a:hover {
     color: var(--bs-primary);
 }
 
 
-
+/* This line is a style for the learn more link  */
 .line {
     display: inline-block;
     vertical-align: middle;
@@ -315,6 +321,7 @@ h1 {
     margin-top: 5rem;
 }
 
+/* styling for all h2  */
 .sub-heading h2 {
     font-size: 100px;
     text-transform: uppercase;
@@ -324,6 +331,7 @@ h1 {
 
 }
 
+/* display none to hide the carousel from the destop  */
 .mobile-display {
     display: none;
 }
@@ -334,6 +342,7 @@ h1 {
     animation: about-fade 2s ease-in forwards;
 }
 
+/* animation for others page beside from main page  */
 @keyframes about-fade {
     0% {
         opacity: 0;
@@ -345,6 +354,8 @@ h1 {
     }
 }
 
+
+/* styling for abou paragraph */
 main.about {
     margin-top: 250px;
 }
@@ -360,7 +371,7 @@ main.about {
     width: 550px;
 }
 
-
+/* education section styling  */
 .education {
     margin-top: 5rem;
     padding-top: 2rem;
@@ -382,6 +393,7 @@ main.about {
     font-weight: 700;
 }
 
+/* skills section styling */
 .skills {
     margin-bottom: 5rem;
     padding-top: 5rem;
@@ -398,6 +410,7 @@ main.about {
     width: 100%;
 }
 
+/* this styling is for the text on the images */
 .centered {
     position: absolute;
     top: 50%;
@@ -418,6 +431,8 @@ main.about {
     width: 100%;
     margin-left: 5rem;
 }
+
+/* This is the overlay text styling on the contact page */
 
 .overlay h2 {
     margin-top: 5rem;
@@ -444,6 +459,7 @@ form {
     padding-top: 4rem;
 }
 
+/* this is the styling for input field */
 input[type=text],
 input[type=email] {
     background: transparent;
@@ -455,7 +471,7 @@ input[type=email] {
 }
 
 
-
+/* This animation add to the submit button  */
 .submit {
     list-style-type: none;
     margin: 0;
@@ -523,7 +539,7 @@ input[type=email] {
 
 
 
-
+/* this is the styling for the footer  */
 .bg-blue {
     display: flex;
     flex-direction: row;
@@ -555,6 +571,7 @@ i {
 }
 
 
+/* This is the styling for the back to top button */
 #myBtn {
     display: none;
     position: fixed;
@@ -656,7 +673,7 @@ i {
     .about p {
         margin-top: 2rem;
         max-width: 800px;
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .skills h2 {
@@ -807,12 +824,10 @@ i {
 
     .about p {
         margin-top: 2rem;
-        font-size: 12px;
+        font-size: 16px;
     }
 
-    /* .about .container {
-        padding-left: 0;
-    } */
+
 
 
 

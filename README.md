@@ -12,16 +12,16 @@ I started with the design I made in my UX Design class with Figma. For my proj
 ### Lessons Learned
 - Using Bootstrap Grid effectively
 - How to add libraries to your project
+- Using Bootstrap to make responsive 
 
 ## Libraries Used
 - [Bootstrap](https://getbootstrap.com/)
 - [AnimateOnScroll](https://michalsnik.github.io/aos/)
 
 ## External Resources
-- [Modak Google Font](https://fonts.google.com/specimen/Modak?query=modak)
-- [Montserrat Alternates Google Font] (https://fonts.google.com/specimen/Montserrat+Alternates?query=mont) 
-- [Inter Google Font] (https://fonts.google.com/specimen/Inter?query=inter)
-
+- [Google Fonts] (https://fonts.google.com/)
+- [Google Icon] (https://fonts.google.com/icons)
+- [Font Awesome] (https://fontawesome.com/)
 ## Logo
 ![placeholder](images/logo.svg)
 
