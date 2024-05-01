@@ -3,6 +3,7 @@
     --bs-primary: #A7BABF;
     --bs-secondary: black;
     --bs-tertiary-bg: #3D5055;
+    --bs-content-bg:#f1f1f1;
 
 
 }
@@ -944,3 +945,31 @@ i {
 
 
 }
+
+
+.project-1{
+    background-color: var(--bs-content-bg);
+    width: 100%;
+    padding: 10rem;
+    margin-bottom: 5rem;
+    
+}
+
+.project-2{
+    background-color: var(--bs-content-bg);
+    width: 100%;
+    padding: 10rem;
+    margin-bottom: 50px;
+}
+
+.subhead-and-des h3{
+    padding-left: 1rem;
+    margin-top: 4rem;
+    font-size:large;
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+}
+
+
+  
+  
