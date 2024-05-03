@@ -426,6 +426,10 @@ main.about {
 
 }
 
+.centered:hover{
+    color: var(--bs-content-bg);
+}
+
 /* contact page styling */
 
 .shoes-img {
